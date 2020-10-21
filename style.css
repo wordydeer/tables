@@ -5,12 +5,11 @@
 }
 
 .container{
-    background-color: gray;
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 8fr;
     grid-template-areas: 
     "a a"
     "b c"
@@ -20,18 +19,27 @@
 .a{
     grid-area: a;
     display: flex;
+    background-color: rgb(70, 70, 70);
 }
 
 .b{
     grid-area: b;
+    background-color: rgb(75, 75, 75);
 }
 
 .c{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(80, 80, 80);
     grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .d{
     grid-area: d;
+    background-color: rgb(85, 85, 85);
 }
 
 .d2{
@@ -40,8 +48,6 @@
 }
 
 .item{
-    margin: 1px;
-    background-color: lightgray;
 }
 
 .title{
@@ -67,3 +73,85 @@
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
+
+.card{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.supraCard{
+    background-color: gray;
+    padding: 5px;
+    width: 300px;
+}
+
+.supra{
+    width: 300px;
+}
+
+.r32Card{
+    background-color: gray;
+    padding: 5px;
+    width: 300px;
+}
+
+.r32{
+    width: 300px;
+}
+
+.r34Card{
+    background-color: gray;
+    padding: 5px;
+    width: 300px;
+}
+
+.r34{
+    width: 300px;
+}
+
+.gtrCard{
+    background-color: gray;
+    padding: 5px;
+    width: 300px;
+}
+
+.gtr{
+    width: 300px;
+}
+
+.supraCard:hover{
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+}
+
+.r32Card:hover{
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+}
+
+.r34Card:hover{
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+}
+
+.gtrCard:hover{
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+}
+
+.buy{
+    background-color: wheat;
+    width: 25%;
+    padding: 3px;
+}
+
+.buy:hover{
+    background-color: dodgerblue;
+    color: whitesmoke;
+    transition-duration: 0.3s;
+}
+
+
