@@ -18,6 +18,7 @@
 
 .a{
     grid-area: a;
+    display: flex;
 }
 
 .b{
@@ -32,7 +33,30 @@
     grid-area: d;
 }
 
+.d2{
+    grid-area: d;
+    background-image: url("https://tutorials-cdn.pixelmator.com/gradient-tool/top.jpg");
+}
+
 .item{
     margin: 1px;
     background-color: lightgray;
+}
+
+.title{
+    height: 100%;
+    width: 50%;
+}
+
+.pic{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.zdj{
+    height: 50px;
 }
