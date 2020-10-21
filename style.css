@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .container{
     height: 100vh;
@@ -47,9 +47,6 @@
     background-image: url("https://tutorials-cdn.pixelmator.com/gradient-tool/top.jpg");
 }
 
-.item{
-}
-
 .title{
     height: 100%;
     width: 50%;
@@ -74,18 +71,24 @@
     100% {transform: rotate(360deg);}
 }
 
+.car_name {
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+
 .card{
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: dodgerblue;
 }
 
 .supraCard{
-    background-color: gray;
+    color: whitesmoke;
+    background-color: rgb(14, 1, 59);
     padding: 5px;
     width: 300px;
+    transition-duration: 0.3s;
 }
 
 .supra{
@@ -93,9 +96,11 @@
 }
 
 .r32Card{
-    background-color: gray;
+    color: whitesmoke;
+    background-color: rgb(14, 1, 59);
     padding: 5px;
     width: 300px;
+    transition-duration: 0.3s;
 }
 
 .r32{
@@ -103,9 +108,11 @@
 }
 
 .r34Card{
-    background-color: gray;
+    color: whitesmoke;
+    background-color: rgb(14, 1, 59);
     padding: 5px;
     width: 300px;
+    transition-duration: 0.3s;
 }
 
 .r34{
@@ -113,9 +120,11 @@
 }
 
 .gtrCard{
-    background-color: gray;
+    color: whitesmoke;
+    background-color: rgb(14, 1, 59);
     padding: 5px;
     width: 300px;
+    transition-duration: 0.3s;
 }
 
 .gtr{
@@ -146,12 +155,72 @@
     background-color: wheat;
     width: 25%;
     padding: 3px;
-}
-
-.buy:hover{
-    background-color: dodgerblue;
-    color: whitesmoke;
+    align-items: flex-end;
     transition-duration: 0.3s;
 }
 
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 0.75em 2em;
+    letter-spacing: 0.05rem;
+    margin: 1em;
+    width: 13rem;
+  }
 
+  .draw-border {
+    box-shadow: inset 0 0 0 4px #58cdd1;
+    color: #58afd1;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  
+  .draw-border::before,
+  .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0rem;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  
+  .draw-border:hover {
+    color: #ffe593;
+  }
+  
+  .draw-border:hover::before,
+  .draw-border:hover::after {
+    border-color: #eb196e;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  
+  .draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
+  }
